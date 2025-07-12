@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods</title>
+</head>
+
+<body>
+    <!-- sort and reverse -->
+    <script>
+        var a = ["vaishnavi", 23, "Female", "web Developer"];
+        document.write(a + "</br>");
+
+        a[1] = 22;
+        document.write(a + "</br>");
+    </script>
+    <script>
+        var b = ["vaishnavi", "Radha", "vaibhavi", "vedika", "Eshika"];
+        document.write(b + "</br>");
+        b.sort();
+        document.write(b + "</br>");
+        b.reverse();
+        document.write(b + "</br>");
+    </script>
+    <script>
+        // pop and push
+        var c = ["vaishnavi", "Radha", "vaibhavi", "vedika", "Eshika"];
+        document.write(c + "</br>");
+        c.pop();
+        c.pop();
+        document.write(c + "</br>");
+        c.push("Vaidehi");
+        c.push("Adity");
+        document.write(c + "</br>");
+    </script>
+    <script>
+        // shift and unshift
+        var d = ["vaishnavi", "Radha", "vaibhavi", "vedika", "Eshika"];
+        document.write(d + "</br>");
+        d.unshift();
+        d.unshift();
+        document.write(d + "</br>");
+        d.shift("Vaidehi");
+        d.shift("Adity");
+        document.write(d + "</br>");
+    </script>
+    <!-- concate and join -->
+     <script>
+        var a = ["vaishnavi", "Radha", "vaibhavi", "vedika", "Eshika"];
+        var b = ["Atharva", "Shubham","Rushikesh"];
+        var x =["yash","ram"];
+        var c = a.concat(b,x);
+        document.write(c +"</br>");
+        var d = c.join("*");
+        document.write( d+ "</br>");
+     </script>
+</body>
+
+</html>
