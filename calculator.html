@@ -15,17 +15,17 @@
 
         .container {
             text-align: center;
-            background-color: rgba(46, 48, 50, 0.508);
+            background: linear-gradient(rgb(70, 58, 58) rgb(99, 97, 95));
+            background-color: #252cf532;
             border: 1px solid #1b1919;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(224, 34, 34, 0.1);
-            background: linear-gradient(rgb(228, 13, 13) rgb(232, 165, 70));
             position: relative;
             top: 30px;
             bottom: 50px;
-            left: 200px;
-            box-shadow: 0px 0px 10px rgb(76, 76, 137);
+            left: 50px;
+            box-shadow: 0px 0px 10px rgba(247, 247, 249, 0.899);
             height: 500px;
             width: 500px;
 
@@ -50,9 +50,6 @@
             width: 80px;
             height: 50px;
 
-        }
-        #display{
-            font-size: 50px;
         }
     </style>
 </head>
@@ -96,12 +93,12 @@
                 <button onclick="calculate('*')">*</button>
                 <button onclick="calculate('/')">/</button>
             </div>
-                <div class="row">
+            <div class="row">
 
                 <button onclick="calculateResult()">Result</button>
-                            </div>
-            </div><br><br>
-        </div>
+            </div>
+        </div><br><br>
+    </div>
 
     </div>
     </div>
@@ -118,7 +115,7 @@
             try {
                 const result = eval(displayresult);
                 document.getElementById('display').value = result;
-                displayresult= result.toString();
+                displayresult = result.toString();
             } catch (error) {
                 document.getElementById('display').value = error;
                 calculateResult = '';
@@ -126,8 +123,8 @@
 
         }
         function backspace() {
-            displayresult=displayresult.slice(0,-1);
-            document.getElementById('display').value=displayresult;
+            displayresult = displayresult.slice(0, -1);
+            document.getElementById('display').value = displayresult;
         }
 
     </script>

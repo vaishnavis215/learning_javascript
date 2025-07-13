@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arithmetic Operation Using Function</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
+
     <style>
-          body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-    width: 50%;
-    margin: 0;
-}
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+            width: 50%;
+            margin: 0;
+        }
 
-.container {
-    text-align: center;
-    background-color: rgba(128, 182, 235, 0.362);
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(224, 34, 34, 0.1);
-    background: linear-gradient(rgb(228, 13, 13) rgb(232, 165, 70));
-    position: relative;
-    top: 30px;
-    bottom: 50px;
-    left: 300px;
-    box-shadow: 0px 0px 10px rgb(76, 76, 137);
-    
-    
-}
-.container:hover{
-    transition: ease-in-out 1s;
-    transform: scale(1.1);
-    transition-duration: 2s;
-    transform-style: flat;
-}
+        .container {
+            text-align: center;
+            background-color: #252cf532;
+            border: 1px solid #1b1919;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(224, 34, 34, 0.1);
+            background: linear-gradient(rgb(228, 13, 13) rgb(232, 165, 70));
+            position: relative;
+            top: 30px;
+            bottom: 50px;
+            left: 50px;
+            box-shadow: 0px 0px 10px rgba(247, 247, 249, 0.899);
+            height: 600px;
+            width: 500px;
 
-h1 {
-    margin-bottom: 20px;
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+        }
 
-label {
-    margin-bottom: 10px;
-}
+        .container:hover {
+            transition: ease-in-out 1s;
+            transform: scale(1.1);
+            transition-duration: 2s;
+            transform-style: flat;
+        }
 
-input {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #0973f4;
-    border-radius: 5px;
-    width: 100%;
-    box-sizing: border-box;
-}
-.input ::after{
-    border: #f0f3f6;
+        h1 {
+            margin-bottom: 20px;
+        }
 
-}
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-}
+        label {
+            margin-bottom: 10px;
+        }
 
-button {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0678f3e3;
-    color: #fff;
-    cursor: pointer;
-    width: 20%;
-    transition: ease;
-    transform: scale(1.2);
-}
+        input {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #0973f4;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-button:hover {
-    background-color: #442ed4e2;
-    transition: ease-in-out 1s;
-    transform: scale(1.3);
-}
+        .input ::after {
+            border: #f0f3f6;
 
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 75%;
+        }
+
+        button {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0678f3e3;
+            color: #fff;
+            cursor: pointer;
+            width: 20%;
+            transition: ease;
+            transform: scale(1.2);
+        }
+
+        button:hover {
+            background-color: #442ed4e2;
+            transition: ease-in-out 1s;
+            transform: scale(1.3);
+        }
     </style>
 </head>
+
 <body bg-secondary text="center">
     <div class="container m-4">
         <h1>Arithmetic Operation Using Function</h1>
-        <form id="arithmeticForm">
+        <form id="arithmeticForm" class="myForm">
             <label for="number1">Number 1</label>
-            <input type="number" id="number1" required>
-        
+            <input type="number" id="number1" required name="N1">
+
             <label for="number2 m-3">Number 2</label>
-            <input -group has-validation type="number" id="number2" required>
-           
+            <input -group has-validation type="number" id="number2" required name="N2">
+
             <div class="buttons">
                 <button type="button" onclick="addNumbers()">Add</button>
                 <button type="button" onclick="subtractNumbers()">Subtract</button>
                 <button type="button" onclick="multiplyNumbers()">Multiple</button>
                 <button type="button" onclick="divideNumbers()">Divide</button>
             </div><br><br>
-             <label for="result">Result:</label>
-            <input type="number" id="result" readonly>
+            <label for="result">Result:</label>
+            <input type="number" id="result" readonly name="res" disabled>
         </form>
     </div>
     <script>
-        
+
     </script>
-    <script>
+    <!-- <script>
         
 
 function addNumbers() {
@@ -152,8 +157,50 @@ function divideNumbers() {
         alert('Cannot divide by zero!');
     }
 }
+    </script> -->
+    <!-- <script>
+        var a,b,result;
+        function addNumbers(){
+            a=Number(document.myform.N1.value);
+            b=Number(document.myform.N2.value);
+            result=a+b;
+
+            document.myform.res.value=result;
+        }
+    </script> -->
+    <script>
+
+        function addNumbers() {
+            number1 = Number(document.getElementById('number1').value);
+            number2 = Number(document.getElementById('number2').value);
+            result = number1 + number2;
+
+            document.getElementById('result').value = result;
+        }
+        function subtractNumbers() {
+            number1 = Number(document.getElementById('number1').value);
+            number2 = Number(document.getElementById('number2').value);
+            result = number1 - number2;
+
+            document.getElementById('result').value = result;
+        }
+        function multiplyNumbers() {
+            number1 = Number(document.getElementById('number1').value);
+            number2 = Number(document.getElementById('number2').value);
+            result = number1 * number2;
+
+            document.getElementById('result').value = result;
+        }
+        function divideNumbers() {
+            number1 = Number(document.getElementById('number1').value);
+            number2 = Number(document.getElementById('number2').value);
+            result = number1 / number2;
+
+            document.getElementById('result').value = result;
+        }
     </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
